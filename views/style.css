@@ -58,7 +58,7 @@
   color: #9E9E9E;
 }
 
-/*content-> 메뉴, NEST 이미지*/
+/*content-> 메뉴,index, NEST 이미지*/
 .menu {
   position: absolute;
   width: 20%;
@@ -83,6 +83,7 @@
   top: 15%;
   left: 20%;
   overflow: hidden;
+  background: red;
 }
 .nest_logo {
   position: absolute;

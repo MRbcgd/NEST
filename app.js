@@ -43,4 +43,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.listen(3003,function(){
+  console.log('Connected 3003 port!');
+});
+
+
 module.exports = app;

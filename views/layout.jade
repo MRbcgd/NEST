@@ -1,7 +1,45 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    style
+      include style.css
+    title
   body
-    block content
+    // 전체 페이지
+    .page
+      // 상단
+      .roof
+        h1.roof_text
+          a(href='#') NEST
+      .roof_wing
+        legend.roof_wing_text
+          b
+            a(href='#') LOG-IN
+      // log정보 표시
+      .roof_wing_log
+        legend Not logged-in
+      // content -> 메뉴, index,NEST 로고, portfolio down
+      .menu
+        ul
+          li
+            a(href='#') Birds
+          li
+            a(href='#') Branches
+          li
+            a(href='#') Eggs
+
+      //content
+      block content
+        .index
+
+      // 하단
+      .bottom_hr
+        hr(color='#27D922')
+        hr(color='#27D922')
+      .bottom_wing
+      .bottom
+        .bottom_text1
+          | Developed by crowneck
+        .bottom_text2
+          | Dongguk Univ. CSE
