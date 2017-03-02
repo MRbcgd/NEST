@@ -193,7 +193,32 @@
   overflow: hidden;
 }
 
-
+.nest_login {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 5%;
+  overflow: hidden;
+  border-style:groove; border-color:#D6D6D6;
+  border-left: 0px;
+  border-right: 0px;
+}
+.nest_login table {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+.nest_login_button {
+  position:absolute;
+  width: 38%;
+  height: 100%;
+  top: 0%;
+  background: #FF870F;
+  text-align: center;
+  color: white;
+  outline: 1px auto #D6D6D6;
+  overflow: hidden;
+}
 /*하단 개발자 소개, 소속*/
 .bottom {
   position: absolute;

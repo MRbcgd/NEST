@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .index
+    .title
+      h1 NEST 로그인
+      hr(color='#D6D6D6')
+      legend
+        b NEST의 아이디와 비밀번호를 입력해 주세요.
+    .content
+      .login
+        form.nest_login(action='/users/login', method='post')
+          table
+            tr
+            td 아이디
+            td(text-align='left')
+              input(type='text', name='username', value='')
+            td(rowspan='1')
+              b
+                input.nest_login_button(type='submit', name='', value='로그인')
+            tr
+              td 패스워드
+              td
+                input(type='password', name='password', value='')
+        .joinus_description
+          br
+          b 처음 오신 분은 회원가입을 해주세요.
+        button.joinus_button(type='button', name='button') NEST 회원가입

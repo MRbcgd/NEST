@@ -38,11 +38,13 @@
             <legend><b>로그인하시면 NEST의 서비스를 편리하게 사용하실 수 있습니다.</b></legend>
           </div>
           <div class="content">
-            <script type="text/javascript" src="./public/javascript/login.js">
-
+            <script>
+            function nest_login(){
+              alert("hello")
+            }
             </script>
             <div class="login">
-              <button type="button" class="login_button" name="button">NEST 회원 로그인</button>
+              <button type="button" class="login_button" name="button" onclick="nest_login()">NEST 회원 로그인</button>
               <button type="button" class="google_button" name="button">구글 로그인</button>
               <button type="button" class="facebook_button" name="button">페이스북 로그인</button>
               <div class="joinus_description">

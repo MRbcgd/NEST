@@ -42,16 +42,25 @@
 
             </script> -->
             <div class="login">
-              <button type="button" class="login_button" name="button">NEST 회원 로그인</button>
-              <button type="button" class="google_button" name="button">구글 로그인</button>
-              <button type="button" class="facebook_button" name="button">페이스북 로그인</button>
+              <form class="nest_login" action="/users/login" method="post">
+                <table>
+                  <tr>
+                    <td>아이디</td>
+                    <td text-align="left"><input type="text" name="username" value="" ></td>
+                    <td rowspan="1"><b><input class="nest_login_button" type="submit" name="" value="로그인"></b></td>
+                  </tr>
+                  <tr>
+                    <td>패스워드</td>
+                    <td><input type="password" name="password" value=""></td>
+                  </tr>
+                </table>
+              </form>
               <div class="joinus_description">
                 <br><b>처음 오신 분은 회원가입을 해주세요.</b>
               </div>
               <button type="button" class="joinus_button" name="button">NEST 회원가입</button>
             </div>
           </div>
-
         </div>
 
       <!-- 하단 -->
