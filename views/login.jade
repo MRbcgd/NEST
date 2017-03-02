@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .index
+    .title
+      h1 LOG-IN
+      hr(color='#D6D6D6')
+      legend
+        b 로그인하시면 NEST의 서비스를 편리하게 사용하실 수 있습니다.
+    .content
+      .login
+        button.login_button(type='button', name='button') NEST 회원 로그인
+        button.google_button(type='button', name='button') 구글 로그인
+        button.facebook_button(type='button', name='button') 페이스북 로그인
+        .joinus_description
+          br
+          b 처음 오신 분은 회원가입을 해주세요.
+        button.joinus_button(type='button', name='button') NEST 회원가입

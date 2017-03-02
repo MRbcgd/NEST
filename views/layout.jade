@@ -4,18 +4,21 @@ html
     meta(charset='utf-8')
     style
       include style.css
-    title
+    title NEST
   body
     // 전체 페이지
     .page
       // 상단
       .roof
         h1.roof_text
-          a(href='#') NEST
+          a(href='/') NEST
       .roof_wing
         legend.roof_wing_text
           b
-            a(href='#') LOG-IN
+            if(!users)
+              a(href='/users/login') LOG-IN
+            else
+              a(href='/users/logout') LOG-OUT
       // log정보 표시
       .roof_wing_log
         legend Not logged-in
